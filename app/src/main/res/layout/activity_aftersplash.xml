@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg11"
+    android:padding="10sp"
+    android:layout_height="match_parent"
+    tools:context=".aftersplash">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600sp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/black"
+        android:id="@+id/aftersscard">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/appdiscription"
+                android:textSize="25sp"/>
+
+        </ScrollView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <CheckBox
+        android:id="@+id/dont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFDD0"
+        android:text="Don't show into screen again" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Page"
+        app:backgroundTint="@null"
+        android:textColor="#FFFDD0"
+        android:background="@drawable/btnbg3"
+        android:id="@+id/nextpage"/>
+
+</LinearLayout>

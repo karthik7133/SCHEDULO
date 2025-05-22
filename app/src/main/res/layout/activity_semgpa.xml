@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg11"
+    tools:context=".semgpa">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPA CALCULATOR"
+        android:id="@+id/Title"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/ic_launcher_background"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:text="credits"
+            android:textSize="25sp"
+            android:id="@+id/b1a3"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:text="Grade"
+            android:id="@+id/bad3"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/b1a3"
+            android:textColor="@color/white"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500sp"
+        >
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="10"
+        android:id="@+id/grid">
+
+
+
+            <Spinner
+                android:layout_width="185sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:id="@+id/r1c"
+                android:layout_margin="5sp"
+                />
+
+
+
+            <Spinner
+
+                android:hint="grade"
+                android:id="@+id/r1g"
+                android:layout_width="185sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+
+                android:layout_margin="5sp"/>
+
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r2c"
+                />
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r2g"
+                />
+
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r3c"
+                />
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:id="@+id/r3g"
+                android:layout_margin="5sp"
+                />
+
+            <Spinner
+
+                android:id="@+id/r4c"
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/gradientbtn2"/>
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/gradientbtn2"
+                android:id="@+id/r4g"
+                />
+
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r5c"
+                />
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/gradientbtn2"
+                android:id="@+id/r5g"
+                />
+
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r6c"
+                />
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r6g"
+                />
+
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r7c"
+                />
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r7g" />
+
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r8c"
+                />
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r8g"
+                />
+
+
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r9c"
+                />
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r9g"
+                />
+
+
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r10c"
+                />
+            <Spinner
+                android:layout_width="187sp"
+                android:layout_height="40sp"
+                android:background="@drawable/gradientbtn2"
+                android:layout_margin="5sp"
+                android:id="@+id/r10g"
+                />
+
+
+        </GridLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculate"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gradientbtn2"
+            android:layout_gravity="center"
+            app:backgroundTint="@null"
+            android:layout_alignParentEnd="true"
+            android:text="Calculate"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/clear"
+            app:backgroundTint="@null"
+            android:layout_gravity="center"
+
+            android:background="@drawable/gradientbtn2"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:textColor="@color/ic_launcher_background"
+        android:hint="GPA"
+        android:textColorHint="@color/ic_launcher_background"
+        android:textSize="25sp"
+        android:textAlignment="center"/>
+
+
+
+
+
+</LinearLayout>

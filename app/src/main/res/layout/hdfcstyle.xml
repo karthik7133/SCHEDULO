@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Toggle Buttons -->
+    <RadioGroup
+        android:id="@+id/authMethodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioFingerprint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fingerprint"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password" />
+    </RadioGroup>
+
+    <!-- Fingerprint Login -->
+    <Button
+        android:id="@+id/btnFingerprintLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Fingerprint"
+        android:drawableStart="@drawable/fingerprint" />
+
+    <!-- Password Login -->
+    <LinearLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="12dp"
+    android:backgroundTint="#360340"
+    app:cardBackgroundColor="@android:color/white"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester"
+            android:id="@+id/rowsem"
+            android:textColor=" #FFFDD0"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GPA"
+            android:id="@+id/rowgpa"
+            android:textColor="#FFFDD0"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="credits"
+            android:id="@+id/rowcredits"
+            android:textStyle="bold"
+            android:textColor="#FFFDD0"
+            android:textSize="25dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TimePickerTheme" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorAccent">#4CAF50</item>
+        <item name="android:timePickerStyle">@style/CustomTimePickerStyle</item>
+    </style>
+
+    <style name="CustomTimePickerStyle" parent="Widget.MaterialComponents.TimePicker">
+        <item name="android:backgroundTint">#FF9800</item>
+    </style>
+
+</resources>
+    <!-- res/values/styles.xml -->
+

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg11"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/icon2"
+
+            android:id="@+id/icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SCHEDULO"
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/icon"
+            android:fontFamily="monospace"
+            android:id="@+id/schedulo"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select day"
+        android:id="@+id/selectday"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+
+
+
+        android:textSize="25sp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:padding="5dp"
+        android:background="@drawable/gradientbtn2"
+        android:id="@+id/spinner"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter class details:"
+        android:id="@+id/classdet"
+        android:layout_margin="2dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/black"
+        android:id="@+id/cardclassdet">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/subname"
+
+                android:hint="Subject "
+                android:background="@drawable/gradientbackground"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textStyle="italic"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:id="@+id/starttime"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter start time"
+                android:background="@drawable/gradientbackground"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="italic"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:id="@+id/Endtime"
+                android:hint="Enter End time"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/gradientbackground"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="italic"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:id="@+id/place"
+                android:hint="Enter place"
+                android:background="@drawable/gradientbackground"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addsubject"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gradientbackground"
+
+            android:layout_gravity="center"
+            app:backgroundTint="@null"
+            android:text="Add Subject"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextpage"
+            android:layout_alignParentEnd="true"
+            android:text="Next Page"
+            app:backgroundTint="@null"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gradientbackground"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"/>
+
+
+
+</LinearLayout>

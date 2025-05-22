@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.carcar.myapplication">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/appname"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:debuggable="false"
+        android:theme="@style/Theme.MyApplication"
+        tools:ignore="HardcodedDebugMode">
+        <activity
+            android:name=".timetable"
+            android:exported="false" />
+        <activity
+            android:name=".pyqactivity"
+            android:exported="false" /> <!-- Splash Screen Activity -->
+        <activity
+            android:name=".SplasScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Login Page Activity -->
+        <activity
+            android:name=".loginpage"
+            android:exported="false" /> <!-- Sign-In Page Activity -->
+        <activity
+            android:name=".signupactivity"
+            android:exported="false" /> <!-- Main Activities -->
+        <activity android:name=".aftersplash" />
+        <activity android:name=".intoactivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="true" /> <!-- Other Activities -->
+        <activity
+            android:name=".userdetails"
+            android:exported="false" />
+        <activity
+            android:name=".semgpa"
+            android:exported="false" />
+        <activity
+            android:name=".gpacalc"
+            android:exported="false" />
+        <activity
+            android:name=".fullmarksview"
+            android:exported="false" />
+        <activity
+            android:name=".marksactivity"
+            android:exported="false" />
+        <activity
+            android:name=".Afterintro"
+            android:exported="false" />
+        <activity
+            android:name=".fullview"
+            android:exported="false" /> <!-- Notification Receiver -->
+        <activity android:name=".daysubinput"/>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:exported="false" /> <!-- Boot Receiver -->
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".DailyAlarmReceiver" android:exported="false"/>
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.carcar.myapplication.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

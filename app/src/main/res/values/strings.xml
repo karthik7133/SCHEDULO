@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="appdiscription">"Staying on top of your schedule has never been easier! This app is here to help you manage your classes effortlessly by reminding you just before they start — giving you enough time to prepare and get to the right place.
+
+You can enter essential details like the subject, class start and end times, and even the specific location on campus where your class will be held.
+
+Want a quick and convenient way to pick the time? Simply long press the start or end time fields, and a time selection window will pop up, making it super simple to choose the right time without any hassle.
+
+Just make sure to fill out all the details, and you're good to go!
+        *Quick Time Selection: If you long-press on the start time or end time fields, a time selection window will open, making it easier for you to choose the desired time effortlessly.
+
+Thanks for choosing our app to stay organized — we’re glad to have you here"</string>
+    <string name="appname">"Schedulo</string>
+</resources>
